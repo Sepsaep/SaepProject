@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sepsaep.saepquiz.Activity5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e70d0d"
+        android:gravity="center_horizontal"
+        android:text="Question 4"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText"
+        android:id="@+id/top" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:text="Indonesian Independence Day is commemorated every date ?"
+        android:textColor="#fa0101"
+        android:textSize="24sp"
+        android:layout_below="@+id/top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_min"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#18ff03"
+            android:onClick="decrement"
+            android:text="-"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="10"
+            android:textColor="#476af2"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#18ff03"
+            android:onClick="increment"
+            android:text="+"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnSubmit"
+        android:text="submit"
+        android:textSize="24sp"
+        android:textIsSelectable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+
+
+</RelativeLayout>
